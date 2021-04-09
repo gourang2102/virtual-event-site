@@ -1,0 +1,547 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: "Helvetica Neue",sans-serif;
+    font-weight: lighter;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url('../img/wallpapers.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    line-height: 60px;
+}
+
+nav ul {
+    line-height: 30px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+
+    text-align: right;
+    transition: 1s;
+}
+
+nav.black {
+    background: #000;
+    height: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 20px;
+}
+
+nav ul li a:hover{
+    background-color: rgb(12, 73, 122);
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+}
+
+#heading{
+    padding-top: 165px;
+}
+.btnheader{
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+
+.about-img{
+    height: 500px;
+}
+#speaker .card {
+  border: none;
+  background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.mainflip {
+  -webkit-transition: 1s;
+  -webkit-transform-style: preserve-3d;
+  -ms-transition: 1s;
+  -moz-transition: 1s;
+  -moz-transform: perspective(1000px);
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transition: 1s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.frontside {
+  position: relative;
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  z-index: 2;
+  margin-bottom: 30px;
+}
+
+.backside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+  -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+  box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transition: 1s;
+  -moz-transform-style: preserve-3d;
+  -o-transition: 1s;
+  -o-transform-style: preserve-3d;
+  -ms-transition: 1s;
+  -ms-transform-style: preserve-3d;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+  min-height: 312px;
+}
+
+.backside .card a {
+  font-size: 18px;
+  color: rgb(12, 73, 122) !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+  color: rgb(12, 73, 122) !important;
+}
+
+.frontside .card .card-body img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+/*schedule*/
+.our-schedule-area {
+    position: relative;
+    z-index: 1; }
+    .our-schedule-area .schedule-tab {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 45px; }
+      .our-schedule-area .schedule-tab .nav-tabs {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        border-bottom: none; }
+        .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link {
+          color: white;
+          text-align: center;
+          border-radius: 0;
+          font-size: 18px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-weight: 600;
+          padding: 15px 30px;
+          border-bottom: none;
+          border-top: none;
+          border-left: none;
+          border-right: 1px solid aqua; }
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link {
+              font-size: 14px; } }
+          @media only screen and (max-width: 767px) {
+            .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link {
+              font-size: 10px;
+              padding: 10px; } }
+          @media only screen and (min-width: 480px) and (max-width: 767px) {
+            .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link {
+              font-size: 12px;
+              padding: 15px 20px; } }
+          @media only screen and (min-width: 576px) and (max-width: 767px) {
+            .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link {
+              font-size: 14px; } }
+          .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link span {
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0;
+            text-transform: capitalize; }
+            @media only screen and (max-width: 767px) {
+              .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link span {
+                font-size: 9px; } }
+            @media only screen and (min-width: 480px) and (max-width: 767px) {
+              .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link span {
+                font-size: 10px; } }
+          .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link.active {
+            background-color: rgb(46, 42, 42);
+            color: #ffffff; }
+        .our-schedule-area .schedule-tab .nav-tabs .nav-item:nth-child(1) .nav-link {
+          border-radius: 10px 0 0 10px; }
+        .our-schedule-area .schedule-tab .nav-tabs .nav-item:last-child .nav-link {
+          border-right: none;
+          border-radius: 0 10px 10px 0; }
+  
+  .single-schedule-area {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 25px;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    margin-bottom: 20px; }
+    .single-schedule-area:hover, .single-schedule-area:focus {
+      border-color: aqua; }
+    .single-schedule-area .single-schedule-tumb-info {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 42%;
+      flex: 0 0 42%;
+      max-width: 42%;
+      width: 42%;
+      padding-right: 15px; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .single-schedule-area .single-schedule-tumb-info {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 35%;
+          flex: 0 0 35%;
+          max-width: 35%;
+          width: 35%; } }
+      @media only screen and (max-width: 767px) {
+        .single-schedule-area .single-schedule-tumb-info {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+          width: 100%;
+          padding-left: 0;
+          padding-bottom: 30px; } }
+      .single-schedule-area .single-schedule-tumb-info .single-schedule-tumb {
+        height: 90px;
+        width: 90px; }
+        .single-schedule-area .single-schedule-tumb-info .single-schedule-tumb img {
+          border-radius: 50%; }
+      .single-schedule-area .single-schedule-tumb-info .single-schedule-info {
+        margin-left: 30px; }
+        .single-schedule-area .single-schedule-tumb-info .single-schedule-info h6 {
+          font-size: 20px;
+          color: #ffffff;
+          font-weight: 600; }
+          @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            .single-schedule-area .single-schedule-tumb-info .single-schedule-info h6 {
+              font-size: 16px; } }
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .single-schedule-area .single-schedule-tumb-info .single-schedule-info h6 {
+              font-size: 14px; } }
+          @media only screen and (max-width: 767px) {
+            .single-schedule-area .single-schedule-tumb-info .single-schedule-info h6 {
+              font-size: 14px; } }
+        .single-schedule-area .single-schedule-tumb-info .single-schedule-info p {
+          color: #9293bc;
+          margin-bottom: 0; }
+          @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            .single-schedule-area .single-schedule-tumb-info .single-schedule-info p {
+              font-size: 12px; } }
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .single-schedule-area .single-schedule-tumb-info .single-schedule-info p {
+              font-size: 12px; } }
+          @media only screen and (max-width: 767px) {
+            .single-schedule-area .single-schedule-tumb-info .single-schedule-info p {
+              font-size: 12px; } }
+          .single-schedule-area .single-schedule-tumb-info .single-schedule-info p span {
+            color: #ffffff; }
+    .single-schedule-area .schedule-time-place {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 42%;
+      flex: 0 0 42%;
+      max-width: 42%;
+      width: 42%;
+      padding: 0 15px; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .single-schedule-area .schedule-time-place {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 35%;
+          flex: 0 0 35%;
+          max-width: 35%;
+          width: 35%; } }
+      @media only screen and (max-width: 767px) {
+        .single-schedule-area .schedule-time-place {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+          width: 100%;
+          padding: 0 0 30px 0; } }
+      .single-schedule-area .schedule-time-place p {
+        color: #ffffff;
+        margin-bottom: 0;
+        letter-spacing: 1px; }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+          .single-schedule-area .schedule-time-place p {
+            font-size: 12px; } }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          .single-schedule-area .schedule-time-place p {
+            font-size: 12px; } }
+        @media only screen and (max-width: 767px) {
+          .single-schedule-area .schedule-time-place p {
+            font-size: 12px; } }
+        .single-schedule-area .schedule-time-place p i {
+          color: #df42b1;
+          margin-right: 5px; }
+        .single-schedule-area .schedule-time-place p:last-child {
+          margin-bottom: 0; }
+    .single-schedule-area .btn.confer-btn {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 16%;
+      flex: 0 0 16%;
+      max-width: 16%;
+      width: 16%; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .single-schedule-area .btn.confer-btn {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+          max-width: 30%;
+          width: 30%; } }
+      @media only screen and (max-width: 767px) {
+        .single-schedule-area .btn.confer-btn {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+          width: 100%; } }
+    .single-schedule-area.single-page {
+      -webkit-box-shadow: 0px 8px 27px 0px rgba(90, 111, 120, 0.15);
+      box-shadow: 0px 8px 27px 0px rgba(90, 111, 120, 0.15);
+      border-color: #ffffff;
+      -webkit-transition-duration: 500ms;
+      -o-transition-duration: 500ms;
+      transition-duration: 500ms; }
+      .single-schedule-area.single-page .single-schedule-info h6 {
+        color: #111343; }
+      .single-schedule-area.single-page .single-schedule-info p {
+        color: #9293bc;
+        margin-bottom: 0; }
+        .single-schedule-area.single-page .single-schedule-info p span {
+          color: #111343; }
+      .single-schedule-area.single-page .schedule-time-place p {
+        color: #111343; }
+      .single-schedule-area.single-page:hover, .single-schedule-area.single-page:focus {
+        border-color: aqua; }
+  /*footer*/
+        footer {
+          background-color: #151515;
+          color: #fff;
+        }
+        
+        b.inline1{
+          text-align: left;
+          float: left;
+        }
+        
+        b.inline2{
+          text-align: right;
+          float: right;
+        }
+        
+        /* b.inline1 a:hover,b.inline2:hover{
+          color: #823DCC;
+        } */
+        
+        /*footer .social a {
+          color: #fff;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          border-radius: 50%;
+          background: transparent;
+          margin: 15px 5px;
+        }
+        footer .social a:hover {
+          background: #823DCC;
+        }
+        footer p {
+          color: #eee;
+          font-weight: 400;
+          font-size: 12px;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        } */
+        
+        /* ============================ */
+        
+        footer.mainfooter{
+          position:relative;
+          bottom: 0;
+          margin: 0;
+          padding: 80px 0;
+          font-weight: bold;
+        }
+        
+        /* footer social icons */
+        
+        ul.social-network {
+          list-style: none;
+          display: inline;
+          margin-left: 0 !important;
+          padding: 0;
+        }
+        
+        ul.social-network li {
+          display: inline;
+          margin: 0 5px;
+        }
+          /* footer social icons */
+        
+          .social-network a.icoFacebook i{
+            color:#3B5998;
+          }
+        
+          .social-network a.icoLinkedin i{
+            color:#007bb7;
+          }
+        
+          .social-network a.icoInstagram i{
+            color:#dd2a7b;
+          }
+        
+        .social-network a.icoFacebook:hover {
+          background-color: #3B5998;
+        }
+        
+        .social-network a.icoLinkedin:hover {
+          background-color: #007bb7;
+        }
+        
+        .social-network a.icoInstagram:hover {
+          background-color: #dd2a7b;
+        }
+        
+        .social-network a.icoFacebook:hover i,
+        .social-network a.icoLinkedin:hover i ,
+        .social-network a.icoInstagram:hover i{
+          color: #fff;
+        }
+        
+        .social-network a.socialIcon:hover,
+        .socialHoverClass {
+          color: #44BCDD;
+        }
+        
+        .social-circle li a {
+          display: inline-block;
+          position: relative;
+          margin: 0 auto 0 auto;
+          -moz-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          border: 0px solid #ccd;
+          border-radius: 50%;
+          text-align: center;
+          width: 30px;
+          height: 30px;
+          font-size: 15px;
+        }
+        
+        .social-circle li i {
+          margin: 0;
+          line-height: 30px;
+          text-align: center;
+        }
+        
+        .social-circle li a:hover i,
+        .triggeredHover {
+          -moz-transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
+          -ms--transform: rotate(360deg);
+          transform: rotate(360deg);
+          -webkit-transition: all 0.2s;
+          -moz-transition: all 0.2s;
+          -o-transition: all 0.2s;
+          -ms-transition: all 0.2s;
+          transition: all 0.2s;
+        }
+        
+        .social-circle i {
+          color: #595959;
+          -webkit-transition: all 0.8s;
+          -moz-transition: all 0.8s;
+          -o-transition: all 0.8s;
+          -ms-transition: all 0.8s;
+          transition: all 0.8s;
+        }
+        
+        .social-network a {
+          background-color: #F9F9F9;
+        }
+        
+@media(max-width: 786px) {
+  #main-nav{
+    height: 120px;
+  }  
+  nav ul {
+          background: #000;
+    }
+    nav ul li {
+      box-sizing: border-box;
+          width: 100%;
+          height: 50px;
+          margin-bottom: 8px;
+          text-align: center;
+    }
+    .navbutton{
+      margin-bottom: 40px;
+    }
+    .menu-icon {
+          display: block;
+    }
+    .extrabtns{
+      margin-top: 150px;
+    }
+}
